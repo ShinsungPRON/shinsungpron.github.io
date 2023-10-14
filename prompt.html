@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>신성고등학교 PRON</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <meta property="og:title" content="신성고 PRON" />
+	<meta property="og:description" content="신성고 정보 동아리 프론입니다." />
+	<meta property="og:image" content="hacking-how-pressable-handles-it.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <script src="mainsystem.js"></script>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script>
+		/*모바일 체크(삭제하지 맙시다)*/
+		function isMobile() {
+			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		}
+		if (isMobile()){
+			alert('모바일에서는 사용이 불가능합니다.');
+		}
+		
+		/* f12 차단(나중에 풀기)
+        window.addEventListener("keydown", (e) => {
+			var keycode = event.keyCode; 
+			if (keycode == 123) { 
+				event.returnValue = false;
+			}
+		});
+		*/
+		    </script>
+</head>
+
+<!--본문 시작-->
+<body><div id='jb-all'>
+    <div id="jb-header"><p><img src="buttonsimg.png" style="height: 2.5vh;margin-right: 1.5vw;">pron@linux-desktop: ~</p></div>
+    <div id="jb-content" class=content>
+        <div id="textoutput">
+            <p style='line-height: 100%;'>Welcome to the PRON homepage!</p>
+            <p style='line-height: 100%;'>Please type any command and type 'help' for help</p>
+        </div>
+        <div><div style="position:relative;"><div style="position: absolute;" id="testfor"><span style="color: #79cd30;">root@pron-pc</span>:~<span style="color: #5184b3">#</span>&nbsp;<span id="finaltest"></span></div>
+        <div id="textinput">root@pron-pc:~#&nbsp;
+            <input type="text" name="my_name" id="inputplace" onkeyPress="changeme();" onkeydown="changeme2();" onkeyup="byebye();" maxlength='50'>
+        
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

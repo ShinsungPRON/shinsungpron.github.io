@@ -1,0 +1,66 @@
+/* --------------------------------------
+=========================================
+COLOR : RAD 
+
+MAIN COLOR CODE: #f25454
+
+DEEP COLOR CODE: #D32929
+=========================================
+----------------------------------------- */
+
+a,
+.home-page h1,
+.tk-countdown div span:last-child,
+.social-shear a i,
+.service-aro-icon,
+.service i,
+.member span{
+	color: #f25454;
+}
+
+.tk-countdown div.days,
+.tk-countdown div.hours,
+.tk-countdown div.minutes,
+.tk-countdown div.seconds,
+.subscribe-area .form-control,
+.submit-bt,
+.social-shear a i,
+.service i,
+.member .member-img img,
+.contact-form .submit-button,
+.contact-form .form-control{
+	border-color: #f25454;
+}
+
+.submit-bt,
+.social-shear a:hover i,
+.service-aro-left,
+.service-aro-right,
+.service:hover i,
+.member-social .facebook-icon i,
+.member-social .twitter-icon i,
+.member-social .linkedin-icon i,
+.member-social .google-plus-icon i,
+.contact-form .submit-button{
+	background: #f25454;
+}
+
+a:hover{
+	color: #D32929;
+}
+
+.contact-form .submit-button:hover,
+.submit-bt:hover,
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
+	border-color: #D32929;
+}
+
+.member-social .facebook-icon i:hover,
+.member-social .twitter-icon i:hover,
+.member-social .linkedin-icon i:hover,
+.member-social .google-plus-icon i:hover,
+.contact-form .submit-button:hover,
+.submit-bt:hover,
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
+	background: #D32929;
+}
