@@ -1,15 +1,5 @@
 const commandlist = {}
 commandlist['help'] = `
-hello : greetings
-hello -long : introduction of PRON
-help : commandlist
-member -YYYY : member list of the year
-project : our projects
-img : gallery
-
-add -kr for Korean
-`;
-commandlist['help -kr'] = `
 help: print this message and exit
 hello: greetings
 hello -intro: introduction of PRON
@@ -23,14 +13,20 @@ commandlist['start'] = `
 commandlist['hello'] = `
 <img src="images/logo.png">
 
+
 hello!
 This is shinsung high school computer&programming club <u>'PRON'</u>
+<a href="https://www.youtube.com/@pronshinsung" target="_blank"><i class="fab fa-youtube"></i></a>  <a href="https://discord.gg/vrM2nKmS" target="_blank"><i class="fab fa-discord"></i></a>  <a href="https://www.instagram.com/shinsung.pron/" target="_blank"><i class="fab fa-instagram"></i></a>
 
 `
+commandlist['loli'] = `
+<img src="images/loli.gif">
+
+
+`
+
 commandlist['hello -intro'] = `
 hello!
-프론 홈페이지에 오신 여러분을 환영합니다.
-<img src="logo.png">
 `
 commandlist['sudo -rm -rf ./*'] = `
 
