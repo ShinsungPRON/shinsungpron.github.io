@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRON</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+
+  <!-- COLORS -->
+  <link rel="stylesheet" href="../css/blue.css" title="blue"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+  <link rel="alternate stylesheet" href="../css/green.css" title="green">
+  <link rel="alternate stylesheet" href="../css/orange.css" title="orange">
+  <link rel="alternate stylesheet" href="../css/purple.css" title="purple">
+  <link rel="alternate stylesheet" href="../css/slate.css" title="slate">
+  <link rel="alternate stylesheet" href="../css/yellow.css" title="yellow">
+  <link rel="alternate stylesheet" href="../css/red.css" title="red">
+  <link rel="alternate stylesheet" href="../css/blue-munsell.css" title="blue-munsell">
+  <link rel="stylesheet" href="../css/demo.css">
+
+  <!-- Scripts -->
+  <script src="../js/countdown.js"></script>
+  <script>
+    let checkpoint = 0;
+window.addEventListener("keyup", (e) => {
+    const key = e.key;
+    if (key.toLowerCase() == 'p'){
+        if(checkpoint == 0){
+            checkpoint += 1;
+        }
+        else{
+            checkpoint = 0;
+        }
+
+    }if (key.toLowerCase() == 'r'){
+        if(checkpoint == 1){
+            checkpoint += 1;
+        }
+        else{
+            checkpoint = 0;
+        }
+
+    }if (key.toLowerCase() == 'o'){
+        if(checkpoint == 2){
+            checkpoint += 1;
+        }
+        else{
+            checkpoint = 0;
+        }
+
+    }if (key.toLowerCase() == 'n'){
+        if(checkpoint == 3){
+            location.replace('../prompt.html');
+        }
+        else{
+            checkpoint = 0;
+        }
+
+    }
+    console.log(checkpoint);
+});
+  </script>
+</head>
+
+<body style="-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;">
+  <div id="st-preloader">
+    <div id="pre-status">
+      <div class="preload-placeholder"></div>
+    </div>
+  </div>
+
+  <section id="home-page" style="padding-bottom: 0px; margin-bottom: 0px;">
+    <div class="container-fluid home-bg">
+      <div class="row">
+        <div class="col-md-12 text-center home-page">
+          <div class="main-logo"></div>
+          <h1 style="color: white;">History of</h1>
+          <a href=""><img src="../images/logo.png" alt="" style="width: 30vw;" /></a>
+        </div>
+      </div>
+    </div>
+  </section><!-- /#home-page -->
+
+
+  <section id="about-page">
+    <div class="container">
+      <div class="col-md-12 text-center" style="margin-top: 5%;">
+          <h1 class="about-title">4기</h1>
+      </div>
+
+        <div class="row">
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="../images/4/adg.png" alt="" />
+              <div class="member-social">
+                <a class="facebook-icon" href="https://www.facebook.com/profile.php?id=100054840881973" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a class="twitter-icon" href="https://www.instagram.com/flyahn06/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="linkedin-icon" href="https://github.com/flyahn06" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+            <h3>안동기</h3>
+            <span>Leader | Lead Developer</span>
+          </div>
+
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="../images/4/psh.jpg" alt="" />
+              <div class="member-social">
+                <a class="facebook-icon" href="https://www.facebook.com/profile.php?id=100047086332984" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a class="twitter-icon" href="https://www.youtube.com/channel/UCQgR3dMSZyKR_8bdBrV6kVA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="linkedin-icon" href="https://www.instagram.com/coshaman22/" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
+                <a class="google-plus-icon" href="https://github.com/coshaman" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+            <h3>박성현</h3>
+            <span>Sub Leader | Lead Developer</span>
+          </div>
+
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="/images/4/ksg.jpeg" alt="" />
+              <div class="member-social">
+              </div>
+            </div>
+            <h3>김선규</h3>
+            <span>Member</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="/images/4/sjs.png" alt="" />
+              <div class="member-social">
+                <a class="facebook-icon" href="https://github.com/godcastle2" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+            <h3>신재성</h3>
+            <span>Member</span>
+          </div>
+
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="/images/4/ujs.png" alt="" />
+              <div class="member-social">
+                <a class="facebook-icon" href="https://github.com/PerfectTNT-K" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+            <h3>엄준서</h3>
+            <span>Member</span>
+          </div>
+
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="/images/4/ojh.jpg" alt="" />
+              <div class="member-social">
+                <a class="facebook-icon" href="https://github.com/NovaOJH" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+            <h3>오지후</h3>
+            <span>Member</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="/images/4/lsr.jpg" alt="" />
+              <div class="member-social">
+                <a class="facebook-icon" href="https://github.com/hongyoonjae" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+            <h3>이성렬</h3>
+            <span>Member</span>
+          </div>
+
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="/images/unnamed.jpg" alt="" />
+              <div class="member-social">
+                <a class="facebook-icon" href="https://github.com/hongyoonjae" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+            <h3>이재경</h3>
+            <span>Member</span>
+          </div>
+
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="/images/4/lch.jpg" alt="" />
+              <div class="member-social">
+                <a class="facebook-icon" href="https://github.com/chunghwi" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+            <h3>이충휘</h3>
+            <span>Member</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="/images/4/cjh.jpg" alt="" />
+              <div class="member-social">
+                <a class="facebook-icon" href="https://github.com/icejun06" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+            <h3>조준혁</h3>
+            <span>Member</span>
+          </div>
+
+          <div class="col-md-4 text-center member">
+            <div class="member-img">
+              <img src="/images/4/cjm.jpeg" alt="" />
+              <div class="member-social">
+                <a class="facebook-icon" href="https://github.com/jemo0224" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+            <h3>최제모</h3>
+            <span>Lead Developer</span>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    <a href="#" onclick="window.history.back()"><p class="view-history">← 돌아가기</p></a>
+    </div><!-- /.container -->
+  </section><!-- /#about-page -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p>&copy; 2023 <strong>PRON</strong>. All Rights Reserved.</p>
+
+          <h5 style="color: white;">Type 'PRON' to enter command mode.</h5>
+        </div>
+      </div>
+    </div>
+  </footer><!-- /.footer -->
+
+  <!-- JS -->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/countdown.js"></script>
+  <script type="text/javascript" src="../js/jquery.ajaxchimp.js"></script>
+  <script type="text/javascript" src="../js/scripts.js"></script>
+
+  <!-- =========================================================
+       STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
+  ============================================================== -->
+  <script type="text/javascript" src="../js/styleswitcher.js"></script>
+  <script type="text/javascript" src="../js/demo.js"></script>
+  <div class="demo-style-switch" id="switch-style">
+		<div class="switch-button" style="text-decoration: none;">
+            <a id="toggle-switcher" ><i class="fa fa-cog fa-spin fa-fw"></i></a>
+            <br><a id="go-home" ><i class="fa fa-home fa-solid fa-fw"></i></a>
+            <br><a id="go-image" ><i class="fa fa-image fa-solid fa-fw"></i></a>
+            <br><a id="go-history" ><i class="fa fa-landmark fa-solid fa-fw"></i></a></div>
+    <div class="switched-options">
+      <div class="config-title">
+        Colors :
+      </div>
+      <ul class="styles">
+        <li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="Blue">
+          <div class="blue">
+          </div>
+        </a></li>
+
+        <li><a href="#" onclick="setActiveStyleSheet('purple'); return false;" title="Purple">
+          <div class="purple">
+          </div>
+        </a></li>
+
+        <li><a href="#" onclick="setActiveStyleSheet('blue-munsell'); return false;" title="Blue Munsell">
+          <div class="blue-munsell">
+          </div>
+        </a></li>
+
+        <li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" title="Orange">
+          <div class="orange">
+          </div>
+        </a></li>
+
+        <li><a href="#" onclick="setActiveStyleSheet('slate'); return false;" title="Slate">
+          <div class="slate">
+          </div>
+        </a></li>
+
+        <li><a href="#" onclick="setActiveStyleSheet('green'); return false;" title="Green">
+          <div class="green">
+          </div>
+        </a></li>
+
+        <li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" title="Yellow">
+          <div class="yellow">
+          </div>
+        </a></li>
+
+        <li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="Red">
+          <div class="red">
+          </div>
+        </a></li>
+      </ul>
+      Type 'PRON' to shift to command mode
+    </div>
+  </div>
+</body>
+</html>

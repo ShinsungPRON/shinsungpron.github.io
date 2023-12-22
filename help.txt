@@ -1,0 +1,5 @@
+ Register -id -pw -email : register this game
+ Save -filename : save the game
+ Rank -show : show my rank
+ Rank -upload : upload my score data
+ Login -id -pw : login to this game
