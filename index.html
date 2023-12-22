@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<!--
-	Technology by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-
-<html lang="en-US">
+<html lang="ko-KR">
 <head>
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,90 +23,37 @@
 	<link rel="alternate stylesheet" href="css/yellow.css" title="yellow">
 	<link rel="alternate stylesheet" href="css/red.css" title="red">
 	<link rel="alternate stylesheet" href="css/blue-munsell.css" title="blue-munsell">
-
-	<!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
 	<link rel="stylesheet" href="css/demo.css">
-<script src="js/countdown.js"></script>
 
-
-	<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<script src="js/respond.js"></script>
-    <![endif]-->
-
+	<!-- Scripts -->
+	<script src="js/countdown.js"></script>
+	<script src="js/modechanger.js"></script>
 </head>
+
 <body style="-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;" >
-<script>
-	let checkpoint = 0;
-	window.addEventListener("keyup", (e) => {
-  		const key = e.key;
-  		if (key.toLowerCase() == 'p'){
-			if(checkpoint == 0){
-				checkpoint += 1;
-			}
-			else{
-				checkpoint = 0;
-			}
-			
-		}if (key.toLowerCase() == 'r'){
-			if(checkpoint == 1){
-				checkpoint += 1;
-			}
-			else{
-				checkpoint = 0;
-			}
-			
-		}if (key.toLowerCase() == 'o'){
-			if(checkpoint == 2){
-				checkpoint += 1;
-			}
-			else{
-				checkpoint = 0;
-			}
-			
-		}if (key.toLowerCase() == 'n'){
-			if(checkpoint == 3){
-				location.replace('prompt.html');
-			}
-			else{
-				checkpoint = 0;
-			}
-			
-		}
-		console.log(checkpoint);
-	});
-</script>
 	<div id="st-preloader">
 		<div id="pre-status">
 			<div class="preload-placeholder"></div>
 		</div>
-	</div><!-- /#st-preloader -->
+	</div>
 
 	<section id="home-page">
 		<div class="container-fluid home-bg">
 			<div class="row">
 				<div class="col-md-12 text-center home-page">
-					<div class="main-logo">
-						<!--<a href=""><img src="images/logo.png" alt="" style="width: 16vw;" /></a>-->
-					</div>
+					<div class="main-logo"></div>
 					<h1 style="color: white;">Welcome to</h1>
 					<a href=""><img src="images/logo.png" alt="" style="width: 30vw;" /></a>
 
 				</div>
                     <div class="row">
+					<!-- 링크 -->
 					<div class="col-sm-12 social-shear text-center">
 						<a href="https://www.youtube.com/@pronshinsung" target="_blank"><i class="fab fa-youtube"></i></a>
 						<a href="https://discord.gg/vrM2nKmS" target="_blank"><i class="fab fa-discord"></i></a>
 						<a href="https://www.instagram.com/shinsung.pron/" target="_blank"><i class="fab fa-instagram"></i></a>
 						<a href="https://github.com/ShinsungPRON" target="_blank"><i class="fab fa-github"></i></a>
-						<!--<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
-						<a href="#"><i class="fa fa-dribbble"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>-->
-						
-					</div><!-- /.social-shear -->
+					</div>
                     </div>
 				</div>
 			</div>
@@ -132,10 +73,16 @@
 					<h2>신성고 정보 동아리</h2>
 					<p>저희는 함께 다양한 활동을 하며 성장하고 있습니다.</p>
 				</div>
+
 				<div class="col-md-3 col-sm-6 text-center service">
 					<i class="fas fa-laptop"></i>
 					<h3>Web</h3>
 					<p>웹표준 수업 및 프론트엔드</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center service">
+					<i class="fa fa-rocket"></i>
+					<h3>Language</h3>
+					<p>Python, Java 등 다양한 프로그래밍 언어</p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center service">
 					<i class="fas fa-gamepad"></i>
@@ -147,14 +94,12 @@
 					<h3>Algorithm</h3>
 					<p>백준 및 코드포스 문제 풀이</p>
 				</div>
-				<div class="col-md-3 col-sm-6 text-center service">
-					<i class="fa fa-rocket"></i>
-					<h3>Server</h3>
-					<p>Python, Java 등 백엔드 프로그래밍</p>
-				</div>
+
+				<iframe width="1120" height="630" src="https://www.youtube.com/embed/3b7riaoVHGY?si=DXiAKv-R3CDooHEq"
+						title="프론을 소개합니다" allowfullscreen class="center-block" style="margin-top: 5rem; margin-bottom: 3rem;"></iframe>
+
 			</div><!-- /.row -->
 		</div><!-- /.container -->
-	</section><!-- /#service-page -->
 
 	<section id="about-page">
 		<div class="container">
@@ -170,6 +115,8 @@
 					<p>재능있고 창의적인 신성고 학생들이 동아리에 소속되어 있습니다.</p>
 				</div>
 
+				<!------------------------------------< 선생님 >------------------------------------>
+
 				<div class="col-md-12 text-center" style="margin-top: 5%;">
 					<h1 class="about-title">담당 선생님</h1>
 				</div>
@@ -177,402 +124,275 @@
 				<div class="col-md-4 text-center member">
 					<div class="member-img">
 						<img src="images/TR/yjw.png" alt="" />
-						<div class="member-social">
-<!--							<a class="facebook-icon" href="https://www.facebook.com/profile.php?id=100047086332984" target="_blank"><i class="fab fa-facebook"></i></a>-->
-<!--							<a class="twitter-icon" href="https://www.youtube.com/channel/UCQgR3dMSZyKR_8bdBrV6kVA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>-->
-<!--							<a class="linkedin-icon" href="https://www.instagram.com/coshaman22/" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>-->
-<!--							<a class="google-plus-icon" href="https://github.com/coshaman" target="_blank"><i class="fab fa-github" target="_blank"></i></a>-->
-						</div>
 					</div>
 					<h3>윤지운 선생님</h3>
 					<span>Teacher (2022~)</span>
 				</div>
-				
+
+				<!------------------------------------< 4기 >------------------------------------>
 				
 				<div class="col-md-12 text-center" style="margin-top: 5%;">
-					<h1 class="about-title">2023</h1>
+					<h1 class="about-title">4기</h1>
 				</div>
 
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202320415.png" alt="" />
-						<div class="member-social">
-							<a class="facebook-icon" href="https://www.facebook.com/profile.php?id=100054840881973" target="_blank"><i class="fab fa-facebook"></i></a>
-							<a class="twitter-icon" href="https://www.instagram.com/flyahn06/" target="_blank"><i class="fab fa-instagram"></i></a>
-							
-							<a class="linkedin-icon" href="https://github.com/flyahn06" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
-							<!--<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>
-							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+				<div class="row">
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202320415.png" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://www.facebook.com/profile.php?id=100054840881973" target="_blank"><i class="fab fa-facebook"></i></a>
+								<a class="twitter-icon" href="https://www.instagram.com/flyahn06/" target="_blank"><i class="fab fa-instagram"></i></a>
+								<a class="linkedin-icon" href="https://github.com/flyahn06" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>안동기</h3>
+						<span>Leader | Lead Developer</span>
 					</div>
-					<h3>안동기</h3>
-					<span>Leader | Lead Developer</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202320208.jpg" alt="" />
-						<div class="member-social">
-							<a class="facebook-icon" href="https://www.facebook.com/profile.php?id=100047086332984" target="_blank"><i class="fab fa-facebook"></i></a>
-							<a class="twitter-icon" href="https://www.youtube.com/channel/UCQgR3dMSZyKR_8bdBrV6kVA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
-							<a class="linkedin-icon" href="https://www.instagram.com/coshaman22/" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<a class="google-plus-icon" href="https://github.com/coshaman" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202320208.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://www.facebook.com/profile.php?id=100047086332984" target="_blank"><i class="fab fa-facebook"></i></a>
+								<a class="twitter-icon" href="https://www.youtube.com/channel/UCQgR3dMSZyKR_8bdBrV6kVA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+								<a class="linkedin-icon" href="https://www.instagram.com/coshaman22/" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
+								<a class="google-plus-icon" href="https://github.com/coshaman" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>박성현</h3>
+						<span>Sub Leader | Lead Developer</span>
 					</div>
-					<h3>박성현</h3>
-					<span>Sub Leader | Lead Developer</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202320515.jpeg" alt="" />
-						<div class="member-social">
-							<!--<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>
-							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>
-							<a class="linkedin-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>
-							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>
-							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>
-							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202320515.jpeg" alt="" />
+							<div class="member-social">
+							</div>
 						</div>
+						<h3>김선규</h3>
+						<span>Member</span>
 					</div>
-					<h3>김선규</h3>
-					<span>Member</span>
 				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202320113.png" alt="" />
-						<div class="member-social">
-<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/godcastle2" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+				<div class="row">
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202320113.png" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/godcastle2" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>신재성</h3>
+						<span>Member</span>
 					</div>
-					<h3>신재성</h3>
-					<span>Member</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202320511.png" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/PerfectTNT-K" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202320511.png" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/PerfectTNT-K" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>엄준서</h3>
+						<span>Member</span>
 					</div>
-					<h3>엄준서</h3>
-					<span>Member</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202320418.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/NovaOJH" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202320418.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/NovaOJH" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>오지후</h3>
+						<span>Member</span>
 					</div>
-					<h3>오지후</h3>
-					<span>Member</span>
 				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202320611.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/hongyoonjae" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+				<div class="row">
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202320611.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/hongyoonjae" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>이성렬</h3>
+						<span>Member</span>
 					</div>
-					<h3>이성렬</h3>
-					<span>Member</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/unnamed.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-<!--							<a class="linkedin-icon" href="https://github.com/hongyoonjae" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/unnamed.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/hongyoonjae" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>이재경</h3>
+						<span>Member</span>
 					</div>
-					<h3>이재경</h3>
-					<span>Member</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202320219.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/chunghwi" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202320219.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/chunghwi" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>이충휘</h3>
+						<span>Member</span>
 					</div>
-					<h3>이충휘</h3>
-					<span>Member</span>
 				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202320823.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/icejun06" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+				<div class="row">
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202320823.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/icejun06" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>조준혁</h3>
+						<span>Member</span>
 					</div>
-					<h3>조준혁</h3>
-					<span>Member</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202320427.jpeg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/jemo0224" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202320427.jpeg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/jemo0224" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>최제모</h3>
+						<span>Lead Developer</span>
 					</div>
-					<h3>최제모</h3>
-					<span>Lead Developer</span>
 				</div>
-				
+
+
+				<!------------------------------------< 5기 >------------------------------------>
+
 				<div class="col-md-12 text-center" style="margin-top: 5%;">
 					<h1 class="about-title">2024</h1>
 				</div>
 
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/unnamed.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/ixmaster6974" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+				<div class="row">
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202310506.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/outsider7n5" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>김수훈</h3>
+						<span>Developer</span>
 					</div>
-					<h3>김규영</h3>
-					<span>Member</span>
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/unnamed.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/husangjun" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
+						</div>
+						<h3>박지원</h3>
+						<span>Developer</span>
+					</div>
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202310113.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/user24345" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
+						</div>
+						<h3>송준혁</h3>
+						<span>Developer</span>
+					</div>
 				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202310506.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/outsider7n5" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+				<div class="row">
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/unnamed.jpg" alt="" />
 						</div>
+						<h3>유진형</h3>
+						<span>Lead Developer</span>
 					</div>
-					<h3>김수훈</h3>
-					<span>Developer</span>
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202311115.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/wcrain1020" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
+						</div>
+						<h3>이규성</h3>
+						<span>Developer</span>
+					</div>
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202310421.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/ninja8173" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
+						</div>
+						<h3>이상엽</h3>
+						<span>Developer</span>
+					</div>
 				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/unnamed.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/husangjun" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+				<div class="row">
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202310822.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/yjikoo" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>이지구</h3>
+						<span>Lead Developer</span>
 					</div>
-					<h3>박지원</h3>
-					<span>Developer</span>
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202311123.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/junjo2016j" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
+						</div>
+						<h3>전준호</h3>
+						<span>Developer</span>
+					</div>
+
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202310824.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/underconnor" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
+						</div>
+						<h3>정지원</h3>
+						<span>Lead Developer</span>
+					</div>
 				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202310113.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/user24345" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
+
+				<div class="row">
+					<div class="col-md-4 text-center member">
+						<div class="member-img">
+							<img src="images/2023/202310128.jpg" alt="" />
+							<div class="member-social">
+								<a class="facebook-icon" href="https://github.com/minigp77" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+							</div>
 						</div>
+						<h3>최지원</h3>
+						<span>Member</span>
 					</div>
-					<h3>송준혁</h3>
-					<span>Developer</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/unnamed.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-<!--							<a class="linkedin-icon" href="https://github.com/user24345" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
-						</div>
-					</div>
-					<h3>유진형</h3>
-					<span>Lead Developer</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202311115.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/wcrain1020" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
-						</div>
-					</div>
-					<h3>이규성</h3>
-					<span>Developer</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202310421.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/ninja8173" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
-						</div>
-					</div>
-					<h3>이상엽</h3>
-					<span>Developer</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202310822.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/yjikoo" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
-						</div>
-					</div>
-					<h3>이지구</h3>
-					<span>Lead Developer</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202311123.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/junjo2016j" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
-						</div>
-					</div>
-					<h3>전준호</h3>
-					<span>Developer</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202310824.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/underconnor" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
-						</div>
-					</div>
-					<h3>정지원</h3>
-					<span>Lead Developer</span>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/2023/202310128.jpg" alt="" />
-						<div class="member-social">
-							<!--							<a class="facebook-icon" href="" target="_blank"><i class="fab fa-facebook"></i></a>-->
-							<!--							<a class="twitter-icon" href="" target="_blank"><i class="fab fa-youtube"></i></a>-->
-							<a class="linkedin-icon" href="https://github.com/minigp77" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
-							<!--							<a class="google-plus-icon" href=""><i class="fab fa-github" target="_blank"></i></a>-->
-							<!--							<a class="instagram-icon" href=""><i class="fab fa-instagram" target="_blank"></i></a>-->
-							<!--							<a class="twitter-icon" href=""><i class="fab fa-twitter" target="_blank"></i></a>-->
-						</div>
-					</div>
-					<h3>최지원</h3>
-					<span>Member</span>
 				</div>
 
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</section><!-- /#about-page -->
-
-	<!--<section id="contact-page">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<form id="main-contact-form" class="contact-form-area text-center" name="contact-form" method="post" action="sendemail.php">
-						<h1 class="contact-title">Get in touch</h1>
-						<div class="service-aro-icon">
-							<div class="service-aro-left"></div>
-								<i class="fa fa-envelope"></i>
-							<div class="service-aro-right"></div>
-						</div>
-
-						<h2>Feel free to contact any query</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-						<div class="contact-form">
-                            <div class="row">
-							<div class="col-sm-5 your-name col-sm-offset-1">
-								<div class="form-group">
-									<input type="text" name="name" required="required" class="form-control" placeholder="Enter your name...">
-								</div>
-							</div>
-							<div class="col-sm-5 your-email">
-								<div class="form-group">
-									<input type="email" name="email" class="form-control" required="required" placeholder="Enter your email...">
-								</div>
-							</div>
-							<div class="col-sm-10 your-message col-sm-offset-1">
-								<div class="form-group">
-									<textarea name="message" id="message" required="required" class="form-control" rows="10" placeholder="Enter your message..."></textarea>
-								</div>
-								<div class="form-group">
-									<button type="submit" name="submit" class="btn btn-primary btn-lg submit-button" >Submit</button>
-								</div>
-							</div>
-                            </div>
-						</div>
-
-					</form>
-				</div>
-			</div>--><!--/.row-->
-	<!--	</div>--><!-- /.container -->
-<!--</section>--><!-- /#contact-page -->
 
 	<footer class="footer">
 		<div class="container">
@@ -587,11 +407,11 @@
 	</footer><!-- /.footer -->
 
 	<!-- JS -->
-	<script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery -->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
-	<script type="text/javascript" src="js/countdown.js"></script><!-- Countdown -->
-	<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script><!-- ajaxchimp -->
-	<script type="text/javascript" src="js/scripts.js"></script><!-- Scripts -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/countdown.js"></script>
+	<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 
 	<!-- =========================================================
 	     STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
@@ -649,6 +469,5 @@
 			Type 'PRON' to shift to command mode
 		</div>
 	</div>
-
 </body>
 </html>

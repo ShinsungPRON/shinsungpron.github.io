@@ -284,7 +284,7 @@
 /* === Service === */
 	#service-page{
 		background-color: #ffffff;
-		padding: 100px 0px;
+		padding-top: 100px;
 	}
 
 	#service-page .service-title{
