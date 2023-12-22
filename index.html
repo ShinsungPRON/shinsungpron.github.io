@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
@@ -250,7 +251,7 @@
 						<span>Member</span>
 					</div>
 				</div>
-				<a href="history"><p class="view-history">동아리 역사 보기 →</p></a>
+				<a href="history" ><p class="view-history"><i class="fa fa-history fa-solid"></i> 동아리 역사 보기</p></a>
 			</div><!-- /.row -->
 
 
@@ -262,8 +263,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
-					<p>&copy; 2023 <strong>PRON</strong>. All Rights Reserved.</p>
+					<p id="copyright"></p>
 					
+					<script>
+						const year = new Date();
+						document.getElementById("copyright").innerHTML = "&copy; 2023~"+ year.getFullYear()+" <strong>PRON</strong>. All Rights Reserved.";
+					</script>
 					<h5 style="color: white;">Type 'PRON' to enter command mode.</h5>
 				</div>
 			</div>
@@ -283,7 +288,11 @@
 	<script type="text/javascript" src="js/styleswitcher.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>
 	<div class="demo-style-switch" id="switch-style">
-		<a id="toggle-switcher" class="switch-button"><i class="fa fa-cog fa-spin fa-fw"></i></a>
+		<div class="switch-button" style="text-decoration: none;">
+            <a id="toggle-switcher" ><i class="fa fa-cog fa-spin fa-fw"></i></a>
+            <br><a id="go-home" ><i class="fa fa-home fa-solid fa-fw"></i></a>
+            <br><a id="go-image" ><i class="fa fa-image fa-solid fa-fw"></i></a>
+            <br><a id="go-history" ><i class="fa fa-landmark fa-solid fa-fw"></i></a></div>
 		<div class="switched-options">
 			<div class="config-title">
 				Colors :
