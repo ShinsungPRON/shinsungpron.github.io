@@ -37,10 +37,10 @@ a,
 .service-aro-left,
 .service-aro-right,
 .service:hover i,
-.member-social .facebook-icon i,
-.member-social .twitter-icon i,
-.member-social .linkedin-icon i,
-.member-social .google-plus-icon i,
+.member-social .first-icon i,
+.member-social .second-icon i,
+.member-social .third-icon i,
+.member-social .fourth-icon i,
 .contact-form .submit-button{
 	background: #8600c8;
 }
@@ -55,10 +55,10 @@ a:hover{
 	border-color: #7101A8;
 }
 
-.member-social .facebook-icon i:hover,
-.member-social .twitter-icon i:hover,
-.member-social .linkedin-icon i:hover,
-.member-social .google-plus-icon i:hover,
+.member-social .first-icon i:hover,
+.member-social .second-icon i:hover,
+.member-social .third-icon i:hover,
+.member-social .fourth-icon i:hover,
 .contact-form .submit-button:hover,
 .submit-bt:hover,
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{

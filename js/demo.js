@@ -20,6 +20,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$('#go-home').click(function(){
+		window.location.href = '/';
 		home.scrollIntoView({behavior: 'smooth'});
 	});
 });
@@ -32,6 +33,6 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$('#go-history').click(function(){
-		window.open('history');
+		window.location.href = '/history';
 	});
 });

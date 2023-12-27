@@ -443,7 +443,7 @@
 		left: 0;
 	}
 
-	.member-social .facebook-icon i{
+	.member-social .first-icon i{
 		color: #ffffff;
 		font-size: 20px;
 		width: 35px;
@@ -461,12 +461,12 @@
 		transition: all 0.3s ease;
 	}
 
-	.member .member-img:hover .facebook-icon i{
+	.member .member-img:hover .first-icon i{
 		top: 114px;
 		z-index: 300;
 	}
 
-	.member-social .twitter-icon i{
+	.member-social .second-icon i{
 		color: #ffffff;
 		font-size: 20px;
 		width: 35px;
@@ -484,12 +484,12 @@
 		transition: all 0.3s ease;
 	}
 
-	.member .member-img:hover .twitter-icon i{
+	.member .member-img:hover .second-icon i{
 		right: 114px;
 		z-index: 300;
 	}
 
-	.member-social .linkedin-icon i{
+	.member-social .third-icon i{
 		color: #ffffff;
 		font-size: 20px;
 		width: 35px;
@@ -507,12 +507,12 @@
 		transition: all 0.3s ease;
 	}
 
-	.member .member-img:hover .linkedin-icon i{
+	.member .member-img:hover .third-icon i{
 		left: 114px;
 		z-index: 300;
 	}
 
-	.member-social .google-plus-icon i{
+	.member-social .fourth-icon i{
 		color: #ffffff;
 		font-size: 20px;
 		width: 35px;
@@ -530,7 +530,7 @@
 		transition: all 0.3s ease;
 	}
 
-	.member .member-img:hover .google-plus-icon i{
+	.member .member-img:hover .fourth-icon i{
 		bottom: 114px;
 		z-index: 300;
 	}
@@ -632,28 +632,28 @@
 		width: 270px;
 		height: 270px;
 	}
-	.member .member-img:hover .facebook-icon i {
+	.member .member-img:hover .first-icon i {
 		top: 98px;
 	}
-	.member-social .facebook-icon i {
+	.member-social .first-icon i {
 		left: 98px;
 	}
-	.member .member-img:hover .twitter-icon i {
+	.member .member-img:hover .second-icon i {
 		right: 98px;
 	}
-	.member-social .twitter-icon i {
+	.member-social .second-icon i {
 		top: 98px;
 	}
-	.member .member-img:hover .linkedin-icon i {
+	.member .member-img:hover .third-icon i {
 		left: 98px;
 	}
-	.member-social .linkedin-icon i {
+	.member-social .third-icon i {
 		bottom: 98px;
 	}
-	.member .member-img:hover .google-plus-icon i {
+	.member .member-img:hover .fourth-icon i {
 		bottom: 98px;
 	}
-	.member-social .google-plus-icon i {
+	.member-social .fourth-icon i {
 		right: 98px;
 	}
 	
